@@ -1,0 +1,86 @@
+/* Homepage styles (index.html) */
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #000000;
+  padding: 16px 40px;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 48px;
+  color: #ffffff !important;
+}
+
+.navbar-nav .nav-link {
+  color: #ffffff !important;
+  font-weight: 700;
+  font-size: 18px;
+  margin-left: 28px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #A8FF35 !important;
+}
+
+/* Hero section */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.hero-title {
+  font-weight: 700;
+  font-size: 60px;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.hero-subtitle {
+  font-weight: 400;
+  font-size: 32px;
+  color: #ffffff;
+  max-width: 850px;
+  margin: 0 auto 40px auto;
+}
+
+/* Get Started button: 180 x 57, radius 10, #A8FF35, 24px, drop shadow */
+.btn-get-started {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 57px;
+  background-color: #A8FF35;
+  color: #000000;
+  font-size: 24px;
+  border-radius: 10px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(168, 255, 53, 0.35);
+  transition: transform 0.15s ease;
+}
+
+.btn-get-started:hover {
+  color: #000000;
+  transform: translateY(-2px);
+}
+
+/* Smaller screens */
+@media (max-width: 768px) {
+  .navbar { padding: 12px 20px; }
+  .navbar-brand { font-size: 32px; }
+  .navbar-nav .nav-link { margin-left: 0; }
+  .hero { padding: 60px 16px; }
+  .hero-title { font-size: 36px; }
+  .hero-subtitle { font-size: 20px; }
+}
