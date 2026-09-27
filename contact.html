@@ -8,6 +8,92 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link href="css/styles3.css" rel="stylesheet">
+
+  <!-- Same styles embedded here so the page still looks right even if the css folder is missing -->
+  <style>
+/* Contact page styles (contact.html) */
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #000000;
+  padding: 16px 40px;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 48px;
+  color: #ffffff !important;
+}
+
+.navbar-nav .nav-link {
+  color: #ffffff !important;
+  font-weight: 700;
+  font-size: 18px;
+  margin-left: 28px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #A8FF35 !important;
+}
+
+/* Page content */
+.page-content {
+  padding: 50px 60px;
+  max-width: 1100px;
+}
+
+.page-title {
+  font-weight: 700;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.page-content p {
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 18px;
+}
+
+.page-content a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.page-content a:hover {
+  color: #A8FF35;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .navbar { padding: 12px 20px; }
+  .navbar-brand { font-size: 32px; }
+  .navbar-nav .nav-link { margin-left: 0; }
+  .page-content { padding: 30px 16px; }
+  .page-title { font-size: 26px; }
+  .page-content p { font-size: 16px; }
+}
+
+/* Backup nav layout so it matches the design even if Bootstrap is slow to load */
+.navbar .container-fluid { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+.navbar-brand { text-decoration: none; }
+.navbar-nav { display: flex; flex-direction: row; list-style: none; margin: 0; padding: 0; }
+.navbar-nav .nav-link { text-decoration: none; }
+.navbar-toggler { display: none; }
+@media (max-width: 991px) {
+  .navbar-toggler { display: block; background: transparent; border: 1px solid #555; border-radius: 6px; padding: 6px 10px; }
+  .navbar-collapse { width: 100%; }
+  .navbar-nav { flex-direction: column; padding-top: 10px; }
+  .navbar-nav .nav-link { margin-left: 0; padding: 6px 0; }
+}
+  </style>
 </head>
 <body>
 

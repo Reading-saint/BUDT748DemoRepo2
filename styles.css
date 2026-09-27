@@ -84,3 +84,16 @@ body {
   .hero-title { font-size: 36px; }
   .hero-subtitle { font-size: 20px; }
 }
+
+/* Backup nav layout so it matches the design even if Bootstrap is slow to load */
+.navbar .container-fluid { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+.navbar-brand { text-decoration: none; }
+.navbar-nav { display: flex; flex-direction: row; list-style: none; margin: 0; padding: 0; }
+.navbar-nav .nav-link { text-decoration: none; }
+.navbar-toggler { display: none; }
+@media (max-width: 991px) {
+  .navbar-toggler { display: block; background: transparent; border: 1px solid #555; border-radius: 6px; padding: 6px 10px; }
+  .navbar-collapse { width: 100%; }
+  .navbar-nav { flex-direction: column; padding-top: 10px; }
+  .navbar-nav .nav-link { margin-left: 0; padding: 6px 0; }
+}
